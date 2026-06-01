@@ -1,59 +1,135 @@
-<!DOCTYPE html>
-<html lang="en">
+<!doctype html>
+<html lang="pt-BR">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <meta
+            name="description"
+            content="Guia visual de equipes Pokémon recomendadas para os jogos clássicos. Monte times eficientes para vencer as ligas de Kanto, Johto e Hoenn."
+        />
+        <title>Times Pokémon por Geração | Guia de Equipes</title>
 
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link rel="stylesheet" href="style.css">
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Handjet:wght@100..900&display=swap" rel="stylesheet">
-</head>
+        <!-- Prefetch and Google Fonts -->
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+        <link
+            href="https://fonts.googleapis.com/css2?family=Handjet:wght@500;700;900&display=swap"
+            rel="stylesheet"
+        />
 
-<body>
-    <nav class="main-nav">
-        <div class="nav-logo">
-            <img src="./imgp/pokemon-svgrepo-com.svg" alt="logo do pokemon">
-        </div>
+        <!-- Main Stylesheet -->
+        <link rel="stylesheet" href="style.css" />
+    </head>
 
-        <div class="nav-link">
-            <ul>
-                <li> <a href="index.html">Home</a></li>
-                <li> <a href="./red/gen1.html">Geração 1</a></li>
-                <li> <a href="./gold/gen2.html">Geração 2</a></li>
-                <li> <a href="./eme/gen3.html">Geração 3</a></li>
-            </ul>
-        </div>
-    </nav>
+    <body>
+        <!-- Header & Navigation -->
+        <header>
+            <nav class="main-nav">
+                <a
+                    href="../index.html"
+                    class="nav-logo"
+                    aria-label="Ir para a página inicial"
+                >
+                    <img
+                        src="./imgp/pokemon-svgrepo-com.svg"
+                        alt="Logotipo Pokémon"
+                    />
+                </a>
 
-    <main class="ima">
-        <div class="red">
-            <a href="./red/gen1.html"><img src="./imgp/621a197ee6f2c7d9d09ab3dd63f2574b.jpg" alt=""></a>
+                <div class="nav-link">
+                    <ul>
+                        <li>
+                            <a href="../index.html" class="active">Início</a>
+                        </li>
+                        <li>
+                            <a href="../red/gen1.html">Red</a>
+                        </li>
+                        <li><a href="../gold/gen2.html">Gold</a></li>
+                        <li><a href="../eme/gen3.html">Emerald</a></li>
+                    </ul>
+                </div>
+            </nav>
+        </header>
 
-            <p>
-                pokemon red
+        <!-- Hero Section -->
+        <section class="hero">
+            <p class="eyebrow" id="hero-subtitle">
+                Guia visual de equipes Pokémon
             </p>
-        </div>
-        <div class="gold">
-            <a href="./gold/gen2.html"><img src="./imgp/f8d291ee8fc4ee6684b49c6fabdf470f.jpg" alt=""></a>
+            <h1 aria-describedby="hero-subtitle">
+                Monte times eficientes para vencer as primeiras gerações dos
+                jogos clássicos.
+            </h1>
             <p>
-                pokemon gold
+                O projeto organiza recomendações de equipes, golpes e regiões em
+                uma experiência simples de navegar, ajudando jogadores a
+                comparar opções sem perder tempo pesquisando em fontes
+                diferentes.
             </p>
-        </div>
-        <div class="eme">
-            <a href="./eme/gen3.html"><img src="./imgp/5d44c7fd36161ea90d213de2bd11a802.jpg" alt=""></a>
-            <p>
-                pokemon emerald
-            </p>
-        </div>
+        </section>
 
-    </main>
+        <!-- Main Content - Regions Grid -->
+        <main class="ima" aria-label="Seleção de regiões">
+            <!-- Gen 1 Card -->
+            <article class="generation-card red">
+                <a
+                    href="./red/gen1.html"
+                    aria-label="Abrir guia da região de Kanto - Pokémon Red e Blue"
+                >
+                    <img
+                        src="./imgp/621a197ee6f2c7d9d09ab3dd63f2574b.jpg"
+                        alt="Capa ilustrada inspirada em Pokémon Red"
+                    />
+                    <div>
+                        <h2>Kanto</h2>
+                        <span
+                            >Time recomendado para Pokémon Red e Blue, com foco
+                            em cobertura de tipos e progresso da campanha.</span
+                        >
+                    </div>
+                </a>
+            </article>
 
+            <!-- Gen 2 Card -->
+            <article class="generation-card gold">
+                <a
+                    href="./gold/gen2.html"
+                    aria-label="Abrir guia da região de Johto - Pokémon Gold, Silver e Crystal"
+                >
+                    <img
+                        src="./imgp/f8d291ee8fc4ee6684b49c6fabdf470f.jpg"
+                        alt="Capa ilustrada inspirada em Pokémon Gold"
+                    />
+                    <div>
+                        <h2>Johto</h2>
+                        <span
+                            >Seleção para Pokémon Gold, Silver e Crystal,
+                            pensada para os desafios de Johto e Kanto.</span
+                        >
+                    </div>
+                </a>
+            </article>
 
-
-</body>
-
+            <!-- Gen 3 Card -->
+            <article class="generation-card eme">
+                <a
+                    href="./eme/gen3.html"
+                    aria-label="Abrir guia da região de Hoenn - Pokémon Ruby, Sapphire e Emerald"
+                >
+                    <img
+                        src="./imgp/5d44c7fd36161ea90d213de2bd11a802.jpg"
+                        alt="Capa ilustrada inspirada em Pokémon Emerald"
+                    />
+                    <div>
+                        <h2>Hoenn</h2>
+                        <span
+                            >Equipe para Ruby, Sapphire e Emerald, priorizando
+                            consistência, dano e utilidade durante a
+                            jornada.</span
+                        >
+                    </div>
+                </a>
+            </article>
+        </main>
+    </body>
 </html>
