@@ -1,0 +1,43 @@
+@import "tailwindcss";
+
+@layer base {
+    * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+}
+
+/* 2. Theme tokens (geram classes utilitárias no Tailwind) */
+@theme {
+    --color-theme: #f6cc42;
+    --font-primary: "Handjet", sans-serif;
+    --ease-theme: cubic-bezier(0.25, 0.8, 0.25, 1);
+    --text-tiny: 1.2rem;
+}
+
+/* Variáveis que não viram utilitário do Tailwind, mas continuam usáveis via var() */
+:root {
+    --theme-color-rgb: 246, 204, 66;
+    --transition-speed: 0.4s;
+}
+
+/* 3. Base Styles & Typography */
+body,
+html {
+    width: 100%;
+    min-height: 100vh;
+    background-color: #08080c;
+    color: #ffffff;
+    overflow-x: hidden;
+}
+
+body {
+    font-family: var(--font-primary);
+    font-weight: 700;
+    font-style: normal;
+    font-variation-settings:
+        "ELGR" 1,
+        "ELSH" 2;
+    line-height: 1.4;
+}
